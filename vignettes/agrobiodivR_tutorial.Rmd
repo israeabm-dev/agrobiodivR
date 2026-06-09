@@ -1,0 +1,52 @@
+---
+title: "Tutoriel agrobiodivR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Tutoriel agrobiodivR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introduction
+
+Ce tutoriel présente l'utilisation du package `agrobiodivR`.
+
+# Charger le package
+
+```{r}
+library(agrobiodivR)
+```
+
+# Charger les données d'exemple
+
+```{r}
+data("biodiversity_example")
+head(biodiversity_example)
+```
+
+# Calculer les indices de biodiversité
+
+```{r}
+calculate_diversity_indices(biodiversity_example)
+```
+
+# Générer des recommandations
+
+```{r}
+diversity_results <- calculate_diversity_indices(
+  biodiversity_example
+)
+
+connectivity_results <- data.frame(
+  Mean_Distance = 600
+)
+
+generate_recommendations(
+  diversity_results,
+  connectivity_results
+)
+```
+
+# Conclusion
+
+Le package `agrobiodivR` permet d'analyser la biodiversité agraire, la connectivité écologique et de produire des résultats simples et reproductibles.

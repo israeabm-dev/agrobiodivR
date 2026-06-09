@@ -1,0 +1,31 @@
+Package: agrobiodivR
+Title: Analyse de la biodiversité agraire et connectivité des habitats
+Version: 0.1.0
+Authors@R:
+    person("Israe", "Ait Oubrahim",
+           email = "israeabm@gmail.com",
+           role = c("aut", "cre"))
+Description: Package R permettant d'analyser la biodiversité agraire,
+    calculer des indices de diversité, évaluer la fragmentation des habitats,
+    analyser la connectivité écologique et identifier des corridors
+    écologiques potentiels.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Imports:
+    readr,
+    readxl,
+    sf,
+    terra,
+    ggplot2,
+    randomForest
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr

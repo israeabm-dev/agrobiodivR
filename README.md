@@ -287,7 +287,6 @@ Future versions of agrobiodivR may include:
 Developed by:
 
 **Israe Ait Oubrahim**
-**Salma Ait Oubrahim**
 
 Academic project – Agricultural Biodiversity and Habitat Connectivity Analysis.
 
